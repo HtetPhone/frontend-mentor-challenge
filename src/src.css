@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-red {
+    @apply px-5 py-2 bg-brightRed text-white hover:bg-veryPaleRed hover:text-brightRed rounded-full cursor-pointer shadow-md outline-none focus:outline-none;
+}
+.btn-bright {
+    @apply px-5 py-2 bg-white text-brightRed hover:bg-gray-700 hover:text-white rounded-full cursor-pointer shadow-md outline-none focus:outline-none;
+}
+
+
+.link {
+    @apply hover:text-brightRed text-base outline-none focus:outline-none;
+}
+
+.pad-space {
+    @apply md:px-32;
+}
+
+body {
+    background-image: url('../img/bg-tablet-pattern.svg');
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: 141% -17%;
+}
+@media (max-width: 900px) {
+    body {
+        background-size: 700px;
+        background-position: 19em -17%;
+    }
+}
+
+
+@media (max-width: 576px) {
+    body {
+        background-size: 380px;
+        background-position: 8em -4%;
+    }
+}
+
+#cta {
+    background-image: url("../img/bg-simplify-section-desktop.svg");
+    background-color: hsl(12, 88%, 59%);
+    background-size: 100%;
+    background-position: 20% 30%;
+    background-repeat: no-repeat;
+}
+
+.humburger {
+    width: 26px;
+    height: 26px;
+    transition: all ease 3000ms;
+}
+
+.line-top, .line-middle, .line-bottom {
+    width: 26px;
+    height: 2.8px;
+    background: #000;
+    left: 0;
+    top: 0;
+    border-radius: 14px;
+    transition: all ease 0.45s;
+}
+.line-middle {
+    transform:  translateY(7px);
+}
+.line-bottom {
+    transform:  translateY(14px);
+}
+
+.open .line-top {
+    transform: rotate(45deg) translate(5px) translateY(5px);
+    transition: all ease 0.45s;
+}
+
+.open .line-bottom {
+    transform: rotate(-45deg) translateY(5px) translate(-5px);
+    transition: all ease 0.45s;
+
+}
+.open .line-middle {
+    opacity: 0;
+    transition: all ease 0.45s;
+
+}
+
+
+/* mobile menu  */
+.mobo-menu {
+    position: absolute;
+    width: 100%;
+    background: white;
+    top: 5em;
+    left: -200%;    
+    transition: ease 0.5s;
+}
+.appear {
+    left: 0%!important;
+}

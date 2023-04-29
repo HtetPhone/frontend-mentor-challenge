@@ -661,8 +661,8 @@ video {
   width: 100%;
 }
 
-.max-w-xs {
-  max-width: 20rem;
+.w-40 {
+  width: 10rem;
 }
 
 .cursor-pointer {
@@ -679,6 +679,10 @@ video {
 
 .flex-col-reverse {
   flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-start {
@@ -1109,6 +1113,10 @@ body {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-52 {
+    width: 13rem;
   }
 
   .md\:flex-row {

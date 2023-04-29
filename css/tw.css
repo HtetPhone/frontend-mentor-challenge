@@ -645,8 +645,8 @@ video {
   width: 8rem;
 }
 
-.w-52 {
-  width: 13rem;
+.w-40 {
+  width: 10rem;
 }
 
 .w-80 {
@@ -659,10 +659,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-40 {
-  width: 10rem;
 }
 
 .cursor-pointer {
@@ -679,10 +675,6 @@ video {
 
 .flex-col-reverse {
   flex-direction: column-reverse;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 .items-start {
@@ -1111,12 +1103,12 @@ body {
     width: 33.333333%;
   }
 
-  .md\:w-auto {
-    width: auto;
-  }
-
   .md\:w-52 {
     width: 13rem;
+  }
+
+  .md\:w-auto {
+    width: auto;
   }
 
   .md\:flex-row {
